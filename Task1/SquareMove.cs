@@ -34,16 +34,15 @@ namespace Task1
         {
             for (int i = 0; i < points.Length; i++)
             {
-                Console.Write($"{points[i].X}, " + $"{points[i].Y};");
-                Console.WriteLine(points[i]);
+                Console.Write($"x: {points[i].X}, " + $"y: {points[i].Y};\t");
             }
         }
 
-        public void MovementInstructions()
+        public virtual void MovementInstructions()
         {
             Console.WriteLine("Чтобы передвинуть квадрат влево нажмите стрелку влево");
             Console.WriteLine("Чтобы передвинуть квадрат вправо нажмите стрелку вправо");
-            Console.WriteLine("Чтобы выйте нажмите Escape");
+            Console.WriteLine("Чтобы выйти нажмите Escape");
         }
 
         public virtual void MoveLeft()

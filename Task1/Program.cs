@@ -65,8 +65,6 @@ namespace Task1
                 Console.WriteLine();
                 move.PrintParametrs();
             }
-
-            Console.ReadLine();
         }
     }
 }
