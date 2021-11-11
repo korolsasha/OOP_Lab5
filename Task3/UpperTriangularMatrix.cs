@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Task3
 {
-    class UpperTriangleMatrix : Matrix
+    class UpperTriangularMatrix : Matrix
     {
-        int size = 5;
-        int[,] MatrixSquare = new int[5, 5];
         public override void CreateMatrix()
         {
             Random random = new Random();
@@ -18,7 +16,7 @@ namespace Task3
             {
                 for (int j = 0; j < size; j++)
                 {
-                    rand = random.Next(0, 100);
+                    rand = random.Next(0, 10);
                     MatrixSquare[i, j] = rand;
                 }
             }

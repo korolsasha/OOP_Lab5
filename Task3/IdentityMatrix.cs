@@ -8,8 +8,6 @@ namespace Task3
 {
     class IdentityMatrix : Matrix
     {
-        int size = 5;
-        int[,] MatrixSquare = new int[5, 5];
         public override void CreateMatrix()
         {
             for (int i = 0; i < size; i++)

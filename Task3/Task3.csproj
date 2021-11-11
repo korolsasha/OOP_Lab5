@@ -44,10 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityMatrix.cs" />
+    <Compile Include="IdentityMatrixDeterminant.cs" />
     <Compile Include="Matrix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UpperTriangleMatrix.cs" />
+    <Compile Include="UpperTriangleMatrixDeterminant.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
