@@ -10,6 +10,8 @@ namespace Task3
     {
         static void Main(string[] args)
         {
+            Console.InputEncoding = Console.OutputEncoding = System.Text.Encoding.Unicode;
+
             Matrix matrix = new Matrix();
             IdentityMatrix idmat = new IdentityMatrix();
             UpperTriangularMatrix uptrmat = new UpperTriangularMatrix();
