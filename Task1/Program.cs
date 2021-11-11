@@ -33,6 +33,39 @@ namespace Task1
 
             move.ReadParametrs();
 
+            Console.Clear();
+            move.MovementInstructions();
+            Console.WriteLine();
+            move.PrintParametrs();
+
+            while (true)
+            {
+                var keyInfo = Console.ReadKey();
+
+                bool exit = false;
+
+                switch (keyInfo.Key)
+                {
+                    case ConsoleKey.LeftArrow:
+                        move.MoveLeft();
+                        break;
+                    case ConsoleKey.RightArrow:
+                        move.MoveRight();
+                        break;
+                    case ConsoleKey.Escape:
+                        exit = true;
+                        break;
+                }
+
+                if (exit)
+                    return;
+
+                Console.Clear();
+                move.MovementInstructions();
+                Console.WriteLine();
+                move.PrintParametrs();
+            }
+
             Console.ReadLine();
         }
     }
