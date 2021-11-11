@@ -27,6 +27,8 @@ namespace Task3
 
         public virtual void PrintMatrix()
         {
+            Console.WriteLine("Обычная матрица");
+
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)

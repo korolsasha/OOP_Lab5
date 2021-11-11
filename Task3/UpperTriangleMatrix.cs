@@ -12,25 +12,34 @@ namespace Task3
         int[,] MatrixSquare = new int[5, 5];
         public override void CreateMatrix()
         {
+            Random random = new Random();
+            int rand;
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)
                 {
-                    if (i == j)
-                    {
-                        MatrixSquare[i, j] = 1;
-                    }
-
-                    if (i != j)
-                    {
-                        MatrixSquare[i, j] = 0;
-                    }
+                    rand = random.Next(0, 100);
+                    MatrixSquare[i, j] = rand;
                 }
+            }
+
+            int a = 1;
+
+            for (int i = 1; i < size; i++)
+            {
+                for (int j = 0; j < a; j++)
+                {
+                    MatrixSquare[i, j] = 0;
+                }
+
+                a++;
             }
         }
 
         public override void PrintMatrix()
         {
+            Console.WriteLine("Верхняя треугольная матрица");
+
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)
